@@ -117,7 +117,6 @@ def Get_SongsInPlaylist(username, playlist_id):
 
 def Process_SongsInPlaylist(username, playlist_id, youtube_id):
     youtube = get_authenticated_service()
-    print("\nOK, aggiungo subito le canzoni alla playlist...\n")
     playlist_dict = sp.user_playlist(user=username, playlist_id=playlist_id, fields = ["tracks","next"])
     tracks = playlist_dict["tracks"]
     Process_Songs(tracks, youtube,youtube_id)
@@ -154,8 +153,10 @@ if token:
         
     SONGREQUEST_PLAYLIST_ID = input("Insert the Youtube Playlist ID, which you can find in the Youtube URL of the Playlist\n\n>>")
     
+    print("\nI'm processing the songs, this may take a while...\n")
+    
     Process_SongsInPlaylist(username, playlist_id, SONGREQUEST_PLAYLIST_ID)
-
+    
     print("\nEnded!\n")
 else:
     print("Can't get token for " + username)
