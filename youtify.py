@@ -11,9 +11,9 @@ import requests
 
 REDIRECT_URI = "http://localhost"
 
-GOOGLEAPI_KEY = "AIzaSyCaVYa2H34D6gGDtoxDXjEQa6yeGPDOjHQ"
+GOOGLEAPI_KEY = "" # Your Google API Key
 
-CLIENT_SECRETS_FILE = "client_secret.json"
+CLIENT_SECRETS_FILE = "client_secret.json" # Path to the client_secret JSON file for Google API
 MISSING_CLIENT_SECRETS_MESSAGE = "MISSING client_secret.json FILE"
 
 YOUTUBE_SCOPE = "https://www.googleapis.com/auth/youtube"
