@@ -20,12 +20,13 @@ YOUTUBE_SCOPE = "https://www.googleapis.com/auth/youtube"
 YOUTUBE_API_SERVICE_NAME = "youtube"
 YOUTUBE_API_VERSION = "v3"
 
+CLIENT_ID = "" # Your Spotify App Client ID
+CLIENT_SECRET = "" # Your Spotify App Client Secret
 
 scope = 'user-library-read playlist-read-private playlist-read-collaborative'
 
+
 username = input("\nYour spotify username: ")
-CLIENT_ID = "a41a697994864dfd96f027b7fc29abea"
-CLIENT_SECRET = "78eca370ef0947baa7570fa80c7f5ed8"
 
 def Show_Songs(playlist_dict):
     c = 0
